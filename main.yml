@@ -1,0 +1,8 @@
+---
+- hosts: all
+  roles:
+    - install
+    - fail2ban_checks
+
+  remote_user: root
+  become: true
